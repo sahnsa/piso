@@ -1,4 +1,3 @@
-
 // Header shrink and retract to normal size based on scroll
 $(document).on("scroll",function(){
   if($(document).scrollTop()>10){
@@ -132,6 +131,4 @@ $( document ).ready(function() {
 const darkModeCheckbox = document.getElementById("checkbox");
 darkModeCheckbox.addEventListener("change", () => {
   document.body.classList.toggle("dark-mode-bg-color");
-
-  console.log("Checkbox");
 });
