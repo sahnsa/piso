@@ -1,0 +1,51 @@
+.contact-form-section {
+    &__contact-content {
+        position: $default-relative-position;
+        width: $default-width;
+        height: $default-height;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+
+        @include respond(big-desktop) {
+            height: 90vh !important;
+        }
+
+        @include respond(tablet-landscape) {
+            height: 80vh !important;
+        }
+
+        @include respond(tablet-portrait) {
+            height: 80vh !important;
+        }
+
+        @include respond(phone) {
+            height: 90vh !important;
+        }
+    }
+
+    &__bg-image-overlay {
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        position: $default-absolute-position;
+    }
+
+    h1 {
+        color: $color-white;
+
+        @include respond(phone) {
+            font-size: $body-copy-font-size;
+        }
+    }
+
+    &__ready-to-start-form {
+       padding-left: 5rem;
+       padding-bottom: 0;
+       padding-right: 5rem;
+       padding-top: 5rem;
+    }
+}

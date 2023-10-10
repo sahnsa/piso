@@ -1,0 +1,78 @@
+.article-wrap {
+    &__hero-background {
+        display: block;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 80vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: $default-relative-position;
+    }
+
+    &__hero-main-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: $default-relative-position;
+    }
+
+    &__h1-my-story {
+        text-align: $default-text-align;
+        color: $color-white;
+        font-size: $h1-text-font-size;
+        text-transform: $default-text-transform;
+
+        @include absoluteCenterTop70;
+        top: 85%;
+    }
+
+    // Define a height for internal pages except for about page
+    &__hero-height,
+    &__hero-main-height {
+        height: 65vh;
+    }
+
+}
+
+.recent-projects-section {
+    &__family-section-bg {
+        background-color: $color-secondary;
+        padding: 5rem 0;
+
+        p {
+            color: $color-white;
+        }
+
+        h1 {
+            color: $color-white;
+        }
+    }
+}
+
+.heading-hero-image-text {
+    &__hero-my-story-text::after {
+        content: '';
+        width: 25px;
+        height: 3px;
+        background: $color-primary;
+        display: block;
+        margin: auto;
+    }
+}
+
+ .skillset::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background: $color-primary;
+    display: block;
+    margin: auto;
+}

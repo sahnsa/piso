@@ -1,0 +1,87 @@
+.technology-section {
+    // body copy styles
+    &__top-body-copy {
+
+        p {
+            @include bodyCopy;
+
+            @include respond(tablet-landscape) {
+                padding-left: 10rem;
+                padding-right: 10rem;
+            }
+
+            @include respond(tablet-portrait) {
+                    padding-left: 10rem;
+                    padding-right: 10rem;
+            }
+        }
+    }
+
+    &__body-copy {
+        ul {
+            list-style: none;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            margin: 0 auto;
+            display: inline-block;
+            position: $default-relative-position;
+
+            li {
+                display: block;
+                text-align: $default-text-align-left;
+                font-weight: $default-bold-font-weight;
+                line-height: 1.7em;
+            }
+        }
+    }
+
+    &__content {
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+    }
+
+    &__technology-hr-line {
+        position: $default-relative-position;
+        height: .1875rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba($color-body-copy, 0.1) !important;
+    }
+
+    &__tech-item {
+        font-size: 5rem;
+
+        img {
+            width: 124px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem;
+            height: 132px;
+            padding: 3rem;
+        }
+    }
+
+    &__my-skills {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    &__skills {
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: $medium-mobile-font-size;
+        background: rgba($color-body-copy,.2);
+        border-radius: 5px;
+        font-weight: $default-bold-font-weight;
+        color: $color-body-copy;
+
+        @include respond(tablet-portrait) {
+            font-size: $default-font-size;
+        }
+    }
+}

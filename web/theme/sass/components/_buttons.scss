@@ -1,0 +1,137 @@
+// Get started button styles
+.get-started-btn {
+	&,
+	&:link,
+	&:visited {
+		text-transform: $default-text-transform;
+		text-decoration: none;
+		padding: 1.5rem 4rem;
+		display: inline-block;
+		border-radius: 10rem;
+		transition: all .2s;
+		position: $default-relative-position;
+		font-size: $default-font-size;
+    	font-weight: 600;
+
+		border: none;
+		cursor: pointer;
+	}
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow:  0 1rem 2rem rgba($color-secondary, .2);
+
+		&::after {
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: 0;
+		}
+	}
+
+	&:active,
+	&:focus {
+		transform: translateY(-1px);
+		box-shadow:  0 .5rem 1rem rgba($color-secondary, .2);
+		outline: none;
+	}
+
+	&--btn-white {
+		background-color: $color-white;
+		color: $color-secondary;
+
+		&::after {
+			background-color: $color-white;
+		}
+	}
+
+	&::after {
+		content: "";
+		display: inline-block;
+		height: $default-height;
+		width: $default-width;
+		border-radius: 10rem;
+		position: $default-absolute-position;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all .4s;
+	}
+
+	&--btn-animated {
+		animation: moveInBottom .5s ease-out .75s;
+		animation-fill-mode: backwards;
+	}
+
+	&--btn-border {
+		border: 1px solid rgba($border-color, 0.5) !important;
+	}
+}
+
+// form button styles
+.footer {
+	&--form-btn {
+		display: inline-block;
+		background-color: $color-primary;
+		width: 25.125rem;
+		padding: 1.6875rem 4.6875rem;
+		cursor: pointer;
+		border: none;
+		border-radius: 0;
+		transition: all .4s;
+		outline: none;
+
+		@include respond(phone) {
+			width: 100%;
+		}
+	}
+
+	&--form-btn-primary {
+		font-size: $body-copy-font-size;
+		font-weight: $default-bold-font-weight;
+		color: $color-white;
+		text-transform: $default-text-transform;
+	}
+}
+
+
+// Visit website button or link styles
+.visit-website-btn {
+	display: block;
+	position: $default-relative-position;
+	margin: auto;
+	width: 20rem;
+
+	&--btn::after {
+		content: "";
+		width: 100%;
+		height: 3px;
+		transform: scaleX(0);
+		transform-origin: bottom right;
+		background:$color-primary;
+		left: 0;
+		bottom: 0;
+		position: $default-absolute-position;
+		-webkit-transition: 0.35s ease;
+		transition: 0.35s ease;
+	}
+
+	&--btn:hover::after,
+	&--btn:focus::after,
+	&--btn:active::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
+
+	&--btn-text {
+		font-size: $medium-mobile-font-size;
+		color: $color-primary;
+		text-transform: $default-text-transform;
+	}
+}
+
+.footer--form-btn.disabled,
+.footer--form-btn:disabled {
+	opacity: .5;
+	cursor: default;
+}
+
+

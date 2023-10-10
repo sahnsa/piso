@@ -1,0 +1,36 @@
+.our-story-hero {
+	position: $default-relative-position;
+	width: $default-width;
+	height: $default-height;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+
+	&__story-overlay {
+		// height: 60vh;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: "";
+		position: $default-absolute-position;
+	}
+
+    &__our-story-hero-content {
+        @include absoluteCenterTop70;
+		text-align: $default-text-align;
+    }
+}
+
+.parallax-scroll {
+	position:relative;
+	z-index:0;
+	-webkit-transition: .15s ease-in-out;
+  	-moz-transition: .15s ease-in-out;
+  	-ms-transition: .15s ease-in-out;
+  	-o-transition: .15s ease-in-out;
+  	transition: .15s ease-in-out;
+
+	min-height: 600px;
+}

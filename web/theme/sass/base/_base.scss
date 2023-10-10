@@ -1,0 +1,80 @@
+// Global styles reset
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @include respond(tablet-landscape) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tablet-portrait) {
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+ }
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display:block;
+    margin: 0;
+}
+
+html, body {
+    height: $default-height;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: $default-height;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+
+body {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+ }
+
+ body.dark-mode-bg-color, body.dark-mode-bg-color .recent-projects-section__project-bg-green {
+    background-color: rgba($color-dark-mode,1);
+}
+
+body.dark-mode-bg-color h1, body.dark-mode-bg-color p {
+    color: $color-white;
+}
+
+ // Main page layout wrapper styles
+.page-wrapper {
+    height: 100vh;
+    position: relative;
+    margin: 0 0;
+    padding: 0 0;
+    z-index: 1;
+}

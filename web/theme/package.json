@@ -1,0 +1,28 @@
+{
+  "name": "pisolake",
+  "version": "1.0.0",
+  "description": "PISO Lake website project",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --no-source-map sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "sass --no-source-map sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "author": "Selvin S",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "live-server": "^1.1.0"
+  }
+}

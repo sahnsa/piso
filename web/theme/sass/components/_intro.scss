@@ -1,0 +1,23 @@
+// Intro section styles
+.intro-section {
+    &__body-copy {
+        @include bodyCopy;
+
+        @include respond(tablet-landscape) {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        @include respond(tablet-portrait) {
+                padding-left: 10rem;
+                padding-right: 10rem;
+        }
+
+    }
+
+    &--red-partial-text {
+        color: $color-primary;
+        font-weight: $h1-default-font-weight;
+        letter-spacing: .2rem;
+    }
+}

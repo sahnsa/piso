@@ -1,0 +1,47 @@
+// Define PISO Site Colors
+$color-primary: #Ef5648;
+$color-secondary: #090808;
+$color-tertiary: #A4E9D5;
+$color-page-background: #FBFAF7;
+$color-white: #FFFFFD;
+$color-body-copy: #747070;
+$color-dark-mode: #1e1e1e;
+
+// Define default and font properties
+$default-font-size: 2rem;
+$default-footer-font-size: 1.8rem;
+$h1-text-font-size: 3.5rem;
+$h1-default-font-weight: 700;
+$body-copy-font-size: 3rem;
+$medium-mobile-font-size: 2.5rem;
+$small-mobile-font-size: 1.5rem;
+$default-line-height: 1.35em;
+$default-h2-text-font-size: 2.5rem;
+$default-text-transform: uppercase;
+$default-text-align: center;
+$default-text-align-left: left;
+$default-font-weight: 400;
+$default-bold-font-weight: 500;
+$default-font-weight300: 300;
+
+// Define default positioning
+$default-absolute-position: absolute;
+$default-relative-position: relative;
+
+// Define default-height and default-width
+$default-height: 100%;
+$default-width: 100%;
+$default-height-vh: 100vh;
+$default-max-width: 1320px;
+
+// Define display block props
+$display-flex: flex;
+$display-block: block;
+
+// Define default border properties
+$border-color: #232222;
+
+// Site Grid-layout
+$grid-width: 145rem;
+$gutter-vertical: 4rem;
+$gutter-horizontal: 6rem;

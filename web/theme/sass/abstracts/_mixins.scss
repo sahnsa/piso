@@ -1,0 +1,112 @@
+@mixin clearfix{
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+// Containers, rows and columns
+@mixin pisoLakeRow {
+    display: $display-flex;
+    flex-wrap: wrap;
+    margin: auto; // trying something
+}
+
+@mixin containerFullWidth {
+    display: $display-block;
+    position: $default-relative-position;
+    width: $default-width;
+    margin: auto;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+// sections styles
+@mixin sections {
+    position: $default-relative-position;
+    padding: 5rem 0;
+    z-index: 60;
+}
+
+// Absolute center translate -50, -50
+@mixin absoluteCenterTranslate50 {
+    position: $default-absolute-position;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Absolute center translate -50, -40
+@mixin absoluteCenterTop70 {
+    position: $default-absolute-position;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// hr-line style
+@mixin hrLine {
+    content: "";
+    position: $default-absolute-position;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 0.1875rem;
+    background: $color-tertiary;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+}
+
+// Body copy style
+@mixin bodyCopy {
+    font-size: $body-copy-font-size;
+    text-align: $default-text-align;
+    font-weight: $default-font-weight;
+    line-height: $default-line-height;
+    color: $color-body-copy;
+    letter-spacing: .04rem;
+}
+
+// Insights news-feed
+@mixin newsFeedArticle {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Define a set of height sizes for hero background image of internal pages
+@mixin heroBackgroundImageHeight {
+    height: 60vh;
+}
+
+
+/*
+setting up breakpoints for the PISO website
+- phone - 600px
+-tablet-portrait - 900px
+-tablet-landscape - 1200px
+-big-desktop - 1800px
+
+ORDER: base + typography > general layout + grid > page layout > components
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content;}
+    }
+
+    @if $breakpoint == tablet-portrait {
+        @media only screen and (max-width: 56.25em) { @content;}
+    }
+
+    @if $breakpoint == tablet-landscape {
+        @media only screen and (max-width: 75em) { @content;}
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content;}
+    }
+}

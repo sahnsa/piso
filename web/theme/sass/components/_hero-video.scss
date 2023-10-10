@@ -1,0 +1,92 @@
+// Hero video styles
+.article-wrap {
+	&__hero-video-background {
+		position: $default-relative-position;
+		width: $default-width;
+		height: 100vh;
+		background-color: rgba($color-secondary, .75);
+	}
+
+	&__video-main-section {
+		display: block;
+		position: $default-absolute-position;
+		top: 0;
+		left: 0;
+		width: $default-width;
+		height: $default-height;
+		// overflow-x: hidden;
+		will-change: transform;
+		z-index: -1000;
+	}
+
+	&__hero-video-content {
+		object-fit: cover;
+		min-width: $default-width;
+		height: $default-height-vh;
+		transition: 1s opacity;
+		opacity: .75;
+	}
+
+	&__h1-and-get-started-box {
+		@include absoluteCenterTranslate50;
+		text-align: center;
+		padding: 2rem;
+		z-index: 50;
+	}
+
+	// Video play or pause styles
+	&__play-pause-video {
+		display: $display-flex;
+		background-color: transparent;
+		padding: 1.5rem 2.5rem;
+		margin: 3rem auto;
+		width: 20rem;
+		position: $default-relative-position;
+
+		button {
+			background-color: $color-secondary;
+			border-radius: 50%;
+			color: $color-white;
+			border: none;
+			outline: none;
+			cursor: pointer;
+
+			.fa-sharp {
+				color: rgba($color-white, .7);
+				font-size: $h1-text-font-size;
+				position: $default-relative-position;
+			}
+		}
+
+		.active-play-pause .fa-sharp {
+			color: rgba($color-white, .7);
+		}
+
+		.play-text {
+			position: absolute;
+			padding: .5rem 1.5rem;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			display: inline-block;
+		}
+	}
+}
+
+
+// Hero video caption styles
+.heading-h1-text {
+		margin-bottom: 5rem;
+
+	&__hero-video-caption {
+		font-size: $h1-text-font-size;
+		color: $color-white;
+		font-weight: 500;
+		text-transform: $default-text-transform;
+		line-height: $default-line-height;
+		letter-spacing: .35rem;
+
+		@include respond(tablet-portrait) {
+			font-size: 3rem;
+		}
+	}
+}

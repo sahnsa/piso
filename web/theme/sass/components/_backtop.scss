@@ -1,0 +1,61 @@
+/*Back  to top*/
+#toTopBtn {
+    position: fixed;
+    bottom: 170px;
+    right: 39px;
+    z-index: 98;
+    padding: 1.9rem;
+    background-color: $color-tertiary;
+
+    @include respond(tablet-portrait) {
+        bottom: 100px;
+        right: 30px;
+    }
+}
+
+.js .cd-top--fade-out {
+    opacity: .5
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    text-decoration: none;
+    color: $color-secondary;
+    text-transform: uppercase;
+}
+
+.fa-sharp.fa-solid.fa-chevron-up {
+    display: $display-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  .back-to-top-text {
+    font-size: $default-font-size;
+    line-height: 1em;
+    font-weight: $default-font-weight;
+    display: $display-flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tablet-portrait) {
+        font-size:$small-mobile-font-size;
+    }
+  }

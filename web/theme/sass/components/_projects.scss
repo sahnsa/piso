@@ -1,0 +1,185 @@
+.recent-projects-section {
+  a {
+    text-decoration: none;
+  }
+
+    &__view-all-btn {
+        margin: 0 auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: $display-block;
+        position: $default-absolute-position;
+    }
+
+    &__top-body-copy {
+      @include bodyCopy;
+
+      @include respond(tablet-landscape) {
+        padding-left: 10rem;
+        padding-right: 10rem;
+      }
+
+      @include respond(tablet-portrait) {
+            padding-left: 10rem;
+            padding-right: 10rem;
+      }
+    }
+
+    &__project-bg-green {
+        background-color: $color-white;
+        display: $display-flex;
+        padding: 5rem;
+    }
+
+    // Project image overlay styles
+    &__d-flex {
+      display: $display-flex;
+    }
+
+    &__set-position-relative {
+      position: $default-relative-position;
+    }
+
+    &__flex-column {
+      flex-direction: column;
+    }
+
+    &__flex-lg-row {
+      flex-direction: row;
+    }
+
+    &__overlay {
+      width: $default-width;
+      margin: 0 1.6667%;
+      // padding: 10px;
+      background-color: $color-white;
+      align-self: stretch;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__overlay-image {
+      width: $default-width;
+      height: auto;
+      display: $display-block;
+    }
+
+    &__overlay-image-cover {
+      position: $default-absolute-position;
+      display: $display-flex;
+      align-items: center;
+      justify-content: center;
+      width: $default-width;
+      height: $default-height;
+      z-index: 2;
+      background-color: $color-tertiary;
+      color: $color-white;
+      font-size: $h1-text-font-size;
+      line-height: $default-line-height;
+      opacity: 0;
+      transition: all 300ms ease-out;
+      font-weight: $default-bold-font-weight;
+      text-transform: $default-text-transform;
+
+      @include respond(tablet-portrait) {
+        font-size: $medium-mobile-font-size;
+      }
+
+      @include respond(phone) {
+        font-size: $small-mobile-font-size;
+      }
+    }
+
+    &__overlay:hover &__overlay-image-cover {
+      opacity: .9;
+      color: $color-secondary;
+      text-decoration: none;
+
+    }
+
+    &__overlay:hover &__project-description h3 {
+      color: $color-secondary;
+    }
+
+    &__project-description {
+      width: $default-width;
+      padding: 2.5rem;
+      margin-top: .625rem;
+      cursor: pointer;
+
+      h3 {
+        margin: 0;
+        padding: 0;
+        font-size: $body-copy-font-size;
+        line-height: 1.875rem;
+        color: $color-body-copy;
+        font-weight: $default-bold-font-weight;
+        text-align: center;
+        letter-spacing: .04rem;
+        text-transform: $default-text-transform;
+
+        @include respond(tablet-portrait) {
+          line-height: normal;
+          font-size: $medium-mobile-font-size;
+        }
+      }
+    }
+
+    &__height-100 {
+      height: $default-height;
+    }
+
+    &__arrow-right {
+      font-size: 21px;
+      padding-left: 1rem;
+    }
+
+    &__overlay:hover &__overlay-arrow {
+      background-color: $color-tertiary;
+      border-color: $color-tertiary;
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    &__hr-line {
+      @include hrLine;
+      bottom: 0;
+      width: 0%;
+      &:hover:after,
+      &:focus:after,
+      &:active:after {
+        width: $default-width;
+      }
+    }
+
+    &__overlay:hover &__hr-line,
+      &__hr-line:focus:after,
+      &__hr-line:active:after {
+        width: 15%;
+        height: .1875rem;
+      }
+
+      &__subtitle {
+        padding-left: 1rem;
+      }
+}
+
+.project-description-content {
+    position: $default-relative-position;
+    display: $display-block;
+}
+
+// Link to view each project styles
+.visit-link-btn {
+    text-align: $default-text-align;
+
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-white;
+        text-decoration: none;
+        display: inline-block;
+    }
+}

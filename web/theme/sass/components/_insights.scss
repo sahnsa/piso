@@ -1,0 +1,191 @@
+.piso-insights-section {
+    a {
+        text-decoration: none;
+    }
+
+    &__top-body-copy {
+        h1 {
+            color: $color-white;
+        }
+    }
+
+    // news feed article overlay styles
+    &__author-image-overlay {
+        width: $default-width;
+        margin: 0 1.6667%;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        @include respond(phone) {
+          width: auto;
+        }
+      }
+
+      &__set-position-relative {
+        position: $default-relative-position;
+      }
+
+      &__author-image,
+      &__article-image {
+        width: $default-width;
+        height: auto;
+        display: $display-block;
+      }
+
+      &__newsfeeds-title {
+        position: $default-absolute-position;
+        display: $display-flex;
+        align-items: center;
+        justify-content: center;
+        width: $default-width;
+        height: $default-height;
+        z-index: 5;
+        background-color: $color-tertiary;
+        color: $color-white;
+        font-size: $h1-text-font-size;
+        line-height: $default-line-height;
+        opacity: 0;
+        transition: all 300ms ease-out;
+        font-weight: $default-bold-font-weight;
+        text-transform: $default-text-transform;
+
+        @include respond(tablet-portrait) {
+          font-size: $medium-mobile-font-size;
+          background-color: transparent;
+        }
+
+        @include respond(phone) {
+          opacity: 0 !important;
+          font-size: $default-font-size;
+        }
+      }
+
+      &__author-name {
+        position: $default-absolute-position;
+        display: $display-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24rem;
+        height: 24rem;
+        z-index: 5;
+        background-color: $color-tertiary;
+        color: $color-white;
+        font-size: $h1-text-font-size;
+        line-height: $default-line-height;
+        opacity: 0;
+        transition: all 300ms ease-out;
+        font-weight: $default-bold-font-weight;
+        text-transform: $default-text-transform;
+
+        @include respond(tablet-portrait) {
+          font-size: $medium-mobile-font-size;
+          background-color: transparent;
+        }
+
+        @include respond(phone) {
+          font-size: $medium-mobile-font-size;
+          opacity: 0 !important;
+        }
+      }
+
+      &__overlay:hover &__author-image,
+      &__overlay:hover &__article-image {
+        opacity: .9;
+        color: $color-secondary;
+        text-decoration: none;
+
+      }
+
+    // News feed article styles
+    &__newsfeeds-author-content {
+        @include newsFeedArticle;
+        // width: 25%;
+    }
+
+    &__newsfeeds-author {
+        width: 24rem;
+        height: 24rem;
+        float: left;
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        -moz-shape-outside: circle(50% at 50% 50%);
+
+        clip-path: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        -moz-shape-clip-path: circle(50% at 50% 50%);
+        position: relative;
+
+        @include respond(tablet-portrait) {
+          width: 11rem;
+          height: 11rem;
+        }
+    }
+
+    &__newsfeeds-image-content {
+        @include newsFeedArticle;
+        width: 75%;
+
+        @include respond(phone) {
+          width: 100%;
+          margin-top: 2rem;
+        }
+    }
+
+    &__author-image {
+        height: $default-height;
+        transform: translateX(0rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__author-name,
+    &__newsfeeds-title {
+        position: $default-absolute-position;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-secondary;
+        text-transform: uppercase;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &__newsfeeds-title {
+        font-size: $default-bold-font-weight;
+    }
+
+    &__author-name {
+        font-size: $default-font-size;
+    }
+
+    &:hover &__author-name,
+    &:hover &__newsfeeds-title {
+        opacity: 0.9;
+        transform: translateY(-50%, -50%);
+    }
+
+    &:hover &__author-image {
+        transform: translateX(0) scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+
+    .row {
+      &__piso-insights-row {
+        @include respond(tablet-portrait) {
+          flex-wrap: nowrap;
+        }
+
+        @include respond(phone) {
+          display: block;
+          position: relative;
+          float: left;
+        }
+      }
+    }
+}

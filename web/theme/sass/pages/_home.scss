@@ -1,0 +1,71 @@
+// Intro section styles
+.intro-section {
+    @include sections;
+}
+
+.our-story-hero {
+    display: $display-flex;
+    margin-top: 5rem;
+    z-index: 20;
+}
+
+.recent-projects-section {
+    position: $default-relative-position;
+
+    &__recent-projects-content {
+        position: $default-relative-position;
+        padding: 5rem 0;
+    }
+
+    &__top-margin {
+        padding-top: 1rem;
+    }
+}
+
+.technology-section {
+    @include sections;
+}
+
+.piso-insights-section {
+    padding-left: 5rem;
+    margin: 0 8.5rem;
+    padding-right: 5rem;
+    padding-bottom: 10rem;
+    position: $default-relative-position;
+
+    background-color: rgba($color-secondary, 1.0);
+
+    @include respond(phone) {
+        margin: 0;
+    }
+}
+
+.contact-form-section {
+    display: block;
+    padding: 5rem 0;
+    z-index: 60;
+    padding-bottom: 0;
+}
+
+.form {
+    display: $display-block;
+    padding-left: 3.55rem;
+    padding-right: 3.55rem;
+    padding-bottom: 0;
+    padding-top: 5rem;
+    margin-top: 0rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+// foot navigation styles
+.foot-nav {
+    position: $default-relative-position;
+    display: $display-block;
+    padding: 5rem;
+}
+
+::selection {
+    background-color: $color-tertiary;
+    color: $color-body-copy;
+}

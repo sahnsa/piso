@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="media/images/favicon.png" sizes="182x182 100x100 50x50">
+
+        <script src="https://kit.fontawesome.com/ff78369e89.js" crossorigin="anonymous"></script>
+
+        <title>PISO Portfolio</title>
+    </head>
+    <body>
+        <div class="page-wrapper">
+          <header class="page-header page-header__container-fluid">
+            <div class="page-header__logo-box">
+              <a href="/" class="page-header__navbar-brand">
+                <img src="media/images/logo-wh.png" alt="Logo of PISO Portfolio" class="page-header__site-logo-image">
+              </a>
+            </div>
+            <div class="page-header__navigation-container">
+              <div class="page-header__dark-mode-container">
+                <div class="page-header__dark-mode-content">
+                  <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                    <span class="mode-off-on"></span>
+                  </label>
+                </div>
+                <span class="page-header__dark-mode-text">Dark On</span>
+              </div>
+              <div class="page-header__nav-button" id="toggle">
+                <span class="navbar-top"></span>
+                <span class="navbar-middle"></span>
+                <span class="navbar-bottom"></span>
+              </div>
+
+              <div class="nav-overlay" id="nav-overlay">
+                <nav class="nav-overlay__nav-overlay-menu" id="nav-overlay-menu">
+                  <ul class="nav-overlay__nav-list">
+                    <li class="nav-overlay__item"><a href="/" class="nav-overlay__link"><i class="fa-solid fa-arrow-left"></i> Home</a></li>
+                    <li class="nav-overlay__item"><a href="/about/about.html" class="nav-overlay__link">About</a></li>
+                    <li class="nav-overlay__item"><a href="/project/project.html" class="nav-overlay__link">Work</a></li>
+                    <li class="nav-overlay__item"><a href="#" class="nav-overlay__link">UX Design</a></li>
+                    <li class="nav-overlay__item"><a href="/contact/contact.html" class="nav-overlay__link">Contact</a></li>
+                    <li class="nav-overlay__item"><a href="#" class="nav-overlay__link">Insights</a></li>
+                  </ul>
+
+                  <div class="foot-nav__nav foot-nav__social-media-nav">
+                    <div class="foot-nav__nav row">
+                      <ul class="foot-nav__nav-social foot-nav__social-media-item">
+                        <li class="foot-nav__nav-social-item"><a href="https://www.linkedin.com/in/selvin-sahn/" class="foot-nav__social-link" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="foot-nav__nav-social-item"><a href="https://www.drupal.org/u/sahnsa" target="_blank" class="foot-nav__social-link"><i class="fa-brands fa-drupal"></i></a></li>
+                        <li class="foot-nav__nav-social-item"><a href="https://github.com/sahnsa/piso" target="_blank" class="foot-nav__social-link"><i class="fa-brands fa-github"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header>
+
+          <article class="article-wrap" role="hero-video" aria-label="Hero video">
+            <div class="article-wrap__hero-video-background">
+              <div class="article-wrap__video-main-section">
+                <video class="article-wrap__hero-video-content" id="video-play" playsinline autoplay muted loop poster="media/images/hero-video-bg.png">
+                  <source src="media/videos/hero-video-ad.mp4" type="video/mp4">
+                  <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+                  Your browser doesn't support HTML video. Here is a <a href="media/videos/hero-landscape-hero.mp4"> link to the video</a>.
+                </video>
+              </div>
+            </div>
+            <div class="article-wrap__h1-and-get-started-box">
+              <h1 class="heading-h1-text">
+                <span class="heading-h1-text__hero-video-caption">Create Web Solutions Tailored to Meet every company's Needs.</span>
+              </h1>
+              <a href="#" class="get-started-btn get-started-btn--btn get-started-btn--btn-white get-started-btn--btn-animated">Get Started</a>
+
+              <div class="article-wrap__play-pause-video">
+                <button class="active-play-pause">
+                  <i class="fa-sharp fa-regular fa-circle-pause"></i>
+                  <span class="play-text">Pause video</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <main class="main-content-area-wrap">
+            <div class="piso-container">
+              <section class="intro-section for-section">
+                <div class="row">
+                  <div class="col-1-of-1">
+                    <div class="intro-section__body-copy">
+                      <h1 class="heading-primary-title">Welcome to PISO!</h1>
+                      <p>
+                        <span class="intro-section--red-partial-text">PISO</span>
+                        is my project portfolio website. My name is Selvin, and I'm excited to share my work. From a young age, I've been passionate about technology and its potential to solve complex problems.
+                        This passion led me to pursue a career in software engineering, which allows me to use my skills in frontend and backend development, building and creative problem-solving.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <section class="our-story-hero parallax-scroll for-section" style="background-image: url(../media/images/hero-lady.jpg); height: 60vh; background-position: 50% -50%;">
+              <div class="our-story-hero__story-overlay" style="background: linear-gradient(to bottom, rgba(8, 7, 7, 0) 0%, rgba(8, 7, 7, 0.65) 0%);">
+                <div class="our-story-hero__our-story-hero-content">
+                  <a href="/about/about.html" class="get-started-btn get-started-btn--btn get-started-btn--btn-white get-started-btn--btn-animated">My Story</a>
+                </div>
+              </div>
+            </section>
+
+            <section class="recent-projects-section for-section">
+              <div class="piso-container">
+                <div class="recent-projects-section__recent-projects-content">
+                  <div class="recent-projects-section__top-body-copy">
+                    <h1 class="heading-primary-title">Projects</h1>
+                    <p>
+                      Identifying individual needs of each client and providing tailored solutions that help them achieve their business goals more efficiently remains my top priority.
+                      See my recent projects for clients below.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-projects-section__project-bg-green">
+                <div class="recent-projects-section container-full-width">
+                  <div class="row row__projects">
+                    <div class="recent-projects-section__d-flex recent-projects-section__flex-column recent-projects-section__flex-lg-row">
+                      <a href="/clients/tva.html" class="recent-projects-section__overlay recent-projects-section__set-position-relative recent-projects-section__d-flex recent-projects-section__flex-column">
+                        <figure class="recent-projects-section__set-position-relative">
+                          <figcaption class="recent-projects-section__overlay-image-cover">
+                            View Tech Village Africa <span class="recent-projects-section__subtitle"> Web Project</span>
+                            <span class="recent-projects-section__arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
+                          </figcaption>
+                          <img src="media/images/techvillage-africa-project.jpg" alt="Picture of a man canoeing people across the river" class="recent-projects-section__overlay-image">
+                        </figure>
+                        <div class="recent-projects-section__project-description recent-projects-section__height-100">
+                          <h3>Tech Village Africa Web Project</h3>
+                        </div>
+                        <div class="recent-projects-section__hr-line"></div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row row__projects">
+                    <div class="recent-projects-section__d-flex recent-projects-section__flex-column recent-projects-section__flex-lg-row">
+                      <a href="/clients/doumpa.html" class="recent-projects-section__overlay recent-projects-section__set-position-relative recent-projects-section__d-flex recent-projects-section__flex-column">
+                        <figure class="recent-projects-section__set-position-relative">
+                          <figcaption class="recent-projects-section__overlay-image-cover">
+                            View Doumpa <span class="recent-projects-section__subtitle"> Web Project</span>
+                            <span class="recent-projects-section__arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
+                          </figcaption>
+                          <img src="media/images/doumpa-web-project.jpg" alt="Picture of Doumpa clinic web project" class="recent-projects-section__overlay-image">
+                        </figure>
+                        <div class="recent-projects-section__project-description recent-projects-section__height-100">
+                          <h3>Doumpa Web Project</h3>
+                        </div>
+                        <div class="recent-projects-section__hr-line"></div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row row__projects">
+                    <div class="recent-projects-section__d-flex recent-projects-section__flex-column recent-projects-section__flex-lg-row">
+                      <a href="https://diaspoza.com/" target="_blank" class="recent-projects-section__overlay recent-projects-section__set-position-relative recent-projects-section__d-flex recent-projects-section__flex-column">
+                        <figure class="recent-projects-section__set-position-relative">
+                          <figcaption class="recent-projects-section__overlay-image-cover">
+                            View Diaspoza <span class="recent-projects-section__subtitle"> Web Project</span>
+                            <span class="recent-projects-section__arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
+                          </figcaption>
+                          <img src="media/images/diaspoza-web-project.jpg" alt="Picture of two young children playing on the beach" class="recent-projects-section__overlay-image">
+                        </figure>
+                        <div class="recent-projects-section__project-description recent-projects-section__height-100">
+                          <h3>Diaspoza Web Project</h3>
+                        </div>
+                        <div class="recent-projects-section__hr-line"></div>
+                      </a>
+                    </div>
+                  </div><br /><br />
+                  <div class="recent-projects-section__view-all-btn">
+                    <a href="/project/project.html" class="get-started-btn get-started-btn--btn get-started-btn--btn-white get-started-btn--btn-animate get-started-btn--btn-border">View all projects</a>
+                  </div><br /><br />
+                </div><!-- end of recent-projects-content -->
+              </div><!-- end of project-bg-green -->
+            </section>
+
+            <section class="technology-section for-section">
+              <div class="piso-container">
+                <div class="row">
+                  <div class="technology-section__content">
+                    <div class="technology-section__top-body-copy">
+                      <h1 class="heading-primary-title">Customized Solutions</h1>
+                      <p>
+                        Specialized in developing tailored solutions that maximize cutting-edge technologies to best position business
+                        for success and stay ahead of the competition while achieving long-term business goals.
+                        These specialized solutions are designed to improve efficiency and increase business performance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="piso-insights-section for-section">
+              <div class="container-full-width">
+                <div class="piso-insights-section__top-body-copy">
+                  <h1 class="heading-primary-title"><span class="intro-section--red-partial-text">PISO</span> Insights</h1>
+                </div>
+                <div class="row row__piso-insights-row">
+                  <div class="piso-insights-section__newsfeeds-author-content">
+                    <a href="#" class="piso-insights-section__author-image-overlay piso-insights-section__set-position-relative">
+                      <figure class="piso-insights-section__newsfeeds-author">
+                        <img src="media/images/author2.jpg" alt="Picture of author Phil Jameson" class="piso-insights-section__author-image">
+                        <figcaption class="piso-insights-section__author-name">Eddie Freeman</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div class="piso-insights-section__newsfeeds-image-content">
+                    <a href="#" class="piso-insights-section__author-image-overlay piso-insights-section__set-position-relative">
+                      <figure class="piso-insights-section__newsfeeds-image">
+                        <img src="media/images/news-ad1.jpg" alt="Picture of the Golden bridge in San Francisco" class="piso-insights-section__article-image">
+                        <figcaption class="piso-insights-section__newsfeeds-title">Read more about this article <span class="recent-projects-section__arrow-right"><i class="fa-solid fa-arrow-right"></i></span></figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="contact-form-section for-section">
+              <div class="contact-form-section__contact-content parallax-scroll" style="background-image: url(../media/images/form-bg-image.jpg); height: 65vh; background-position: 50% -50%;">
+                <div class="contact-form-section__bg-image-overlay" style="background: linear-gradient(to bottom, rgba(9, 8, 8, 0) 0%, rgba(9, 8, 8, 0.85) 0%);">
+                  <div class="contact-form-section__ready-to-start-form">
+                    <form action="" method="POST" class="form needs-validation" novalidate>
+                      <div class="contact-form-section__body-copy">
+                        <h1 class="heading-primary-title">Drop me a mail and let's start the conversation!</h1>
+                      </div>
+                      <div class="form__form-group">
+                        <input type="text" class="form__form-control full-name" name="fullName" placeholder="Full name *" id="fullName" required aria-required="true" aria-label="Full name" maxlength="60">
+                        <div class="form__validator form__alert-danger">Full name field cannot be blank!</div>
+                        <div class="form__valid-name form__alert-danger">Please enter a valid name!</div>
+                      </div>
+
+                      <div class="form__form-group">
+                        <input type="email" class="form__form-control email" name="email" placeholder="Email address *" id="email" required aria-required="true" aria-label="Email address" maxlength="60">
+                        <div class="form__validator form__alert-danger">Email field cannot be blank!</div>
+                        <div class="form__valid-email form__alert-danger">Please enter a valid email!</div>
+                      </div>
+
+                      <div class="form__form-group">
+                        <textarea class="form__form-control valid-message" name="message" id="message" cols="15" rows="2" required placeholder="Your message *" aria-required="true" aria-label="Enter your message" maxlength="125"></textarea>
+                        <div class="form__validator form__alert-danger">Message field cannot be blank!</div>
+                        <div class="form__valid-message form__alert-danger">Please enter a valid message!</div>
+                      </div>
+
+                      <div class="form__form-group">
+                        <input type="submit" name="submit" value="Send" class="footer--form-btn footer--form-btn-primary"></input>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+
+          <footer class="footer-wrapper for-section">
+            <div class="foot-nav" role="footer-nav">
+              <div class="foot-nav__nav-content">
+                <div class="row">
+                  <div class="col-1-of-2">
+                    <div class="foot-nav__nav">
+                      <ul class="foot-nav__nav-list">
+                        <li class="foot-nav__nav-item"><a href="/" class="foot-nav__link">Home</a></li>
+                        <li class="foot-nav__nav-item"><a href="/about/about.html" class="foot-nav__link">About</a></li>
+                        <li class="foot-nav__nav-item"><a href="/project/project.html" class="foot-nav__link">Work</a></li>
+                        <li class="foot-nav__nav-item"><a href="#" class="foot-nav__link">UX Design</a></li>
+                        <li class="foot-nav__nav-item"><a href="/contact/contact.html" class="foot-nav__link">Contact</a></li>
+                        <li class="foot-nav__nav-item"><a href="#" class="foot-nav__link">Insights</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-1-of-2">
+                    <div class="foot-nav__nav foot-nav__float-right">
+                      <ul class="foot-nav__nav-social">
+                        <li class="foot-nav__nav-social-item"><a href="https://www.linkedin.com/in/selvin-sahn/" class="foot-nav__social-link" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="foot-nav__nav-social-item"><a href="https://www.drupal.org/u/sahnsa" target="_blank" class="foot-nav__social-link"><i class="fa-brands fa-drupal"></i></a></li>
+                        <li class="foot-nav__nav-social-item"><a href="https://github.com/sahnsa/piso" target="_blank" class="foot-nav__social-link"><i class="fa-brands fa-github"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="foot-nav__copyright">
+                <p>Copyright &copy; 2023 PISO LAKE. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+
+          <div class="back-to-top">
+            <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true">
+              <i class="fa-sharp fa-solid fa-chevron-up"></i> <span class="back-to-top-text">Back <br />to top</span>
+            </a>
+          </div>
+        </div><!-- End of page-wrap -->
+
+        <!-- JS external and internal files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.1.3/jarallax.min.js' id='jarallax-js-js'></script>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.1.3/jarallax-element.js' id='jarallax-js-element-js'></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
