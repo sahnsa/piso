@@ -142,7 +142,7 @@
 		  }
 
 		.checkbox-label {
-			background-color: rgba(37,37,38);
+			background-color: rgba($color-checkbox-bg, 1.0);
 			width: 40px;
 			height: 26px;
 			border-radius: 50px;
@@ -155,7 +155,7 @@
 		}
 
 		.mode-off-on {
-			background-color: rgba(62,62,66);
+			background-color: rgba($color-mode-off, 1.0);
 			width: 22px;
 			height: 22px;
 			position: absolute;

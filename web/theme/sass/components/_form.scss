@@ -59,3 +59,52 @@
         font-weight: $default-bold-font-weight;
     }
 }
+
+// wp-forms styling begins here!
+.wpforms-validate {
+
+    .wpforms-field:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    .wpforms-field-large {
+        font-size: $default-font-size;
+        font-family: inherit;
+        color: $color-body-copy;
+        padding: 2.25rem 2rem;
+        border-radius: 0;
+        background-color: rgba($color-white, 1.0);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-secondary, .1);
+            border-bottom: 3px solid $color-tertiary;
+            color: $color-secondary;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &::placeholder {
+            color: $color-body-copy;
+        }
+    }
+
+    .wpforms-field-label.wpforms-label-hide {
+        display: none;
+    }
+
+    .wpforms-field.wpforms-field-textarea.form__form-group {
+        margin-bottom: 2rem;
+    }
+
+    #wpforms-201-field_9 {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}

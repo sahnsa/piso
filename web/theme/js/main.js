@@ -132,3 +132,111 @@ const darkModeCheckbox = document.getElementById("checkbox");
 darkModeCheckbox.addEventListener("change", () => {
   document.body.classList.toggle("dark-mode-bg-color");
 });
+
+// Request form validation
+// Sign up form input fields validation, disable button until all fields are filled
+(function ($) {
+
+  $('#wpforms-submit-7').attr('disabled', 'disabled');
+
+  $('#wpforms-7-field_5, #wpforms-7-field_7, #wpforms-7-field_8').on('keyup change blur', function() {
+      let filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+      let alphabet = /^[a-zA-Z\s'-]+$/;
+
+      let fname = $('#wpforms-7-field_5').val();
+      let email = $('#wpforms-7-field_7').val();
+      let message = $('#wpforms-7-field_8').val();
+
+      let $currentField = $(this);
+      $currentField.siblings('.form__alert-danger').remove();
+
+      // Empty Field Check
+      if ($currentField.val() === '') {
+          $currentField.after('<div class="form__alert-danger">This field cannot be empty!</div>');
+          $currentField.siblings('.form__alert-danger').fadeIn();
+      }
+
+      // Name Validity Checks
+      if ($currentField.is('#wpforms-7-field_5') && !alphabet.test(fname)) {
+          $currentField.after('<div class="form__alert-danger">Please enter a valid full name!</div>');
+          $currentField.siblings('.form__alert-danger').fadeIn();
+      }
+
+      // Email Validity Check
+      if ($currentField.is('#wpforms-7-field_7') && !filter.test(email)) {
+          $currentField.after('<div class="form__alert-danger">Please enter a valid email!</div>');
+          $currentField.siblings('.form__alert-danger').fadeIn();
+      }
+
+      if ($currentField.is('#wpforms-7-field_8') && !alphabet.test(message)) {
+          $currentField.after('<div class="form__alert-danger">Please enter a valid message!</div>');
+          $currentField.siblings('.form__alert-danger').fadeIn();
+      }
+
+      // Enable/Disable Button
+      if (fname !== '' && email !== '' && filter.test(email) && message !== '' ) {
+          $('#wpforms-submit-7').removeAttr('disabled');
+      } else {
+          $('#wpforms-submit-7').attr('disabled', 'disabled');
+      }
+  });
+})(jQuery);
+
+
+
+
+// Contact form validation
+// Sign up form input fields validation, disable button until all fields are filled
+(function ($) {
+
+  $('#wpforms-submit-201').attr('disabled', 'disabled');
+
+  $('#wpforms-201-field_7, #wpforms-201-field_8, #wpforms-201-field_9').on('keyup change blur', function() {
+      let filterEmail = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+      let alphabetOnly = /^[a-zA-Z\s'-]+$/;
+
+      let fnameContact = $('#wpforms-201-field_7').val();
+      let emailContact = $('#wpforms-201-field_8').val();
+      let messageContact = $('#wpforms-201-field_9').val();
+
+      let $currentField = $(this);
+      $currentField.siblings('.form__alert-danger').remove();
+
+      // Empty Field Check
+      if ($currentField.val() === '') {
+        $currentField.after('<div class="form__alert-danger">This field cannot be empty!</div>');
+        $currentField.siblings('.form__alert-danger').fadeIn();
+      }
+
+      // Name Validity Check for contact form
+      if ($currentField.is('#wpforms-201-field_7') && !alphabetOnly.test(fnameContact)) {
+        $currentField.after('<div class="form__alert-danger">Please enter a valid full name!</div>');
+        $currentField.siblings('.form__alert-danger').fadeIn();
+
+        console.log("This worked:" + fnameContact);
+      }
+
+      // Email Validity Check for contact form
+      if ($currentField.is('#wpforms-201-field_8') && !filterEmail.test(emailContact)) {
+        $currentField.after('<div class="form__alert-danger">Please enter a valid email!</div>');
+        $currentField.siblings('.form__alert-danger').fadeIn();
+
+        console.log("This worked:" + emailContact);
+      }
+
+      // Message Validity Check for contact form
+      if ($currentField.is('#wpforms-201-field_9') && !alphabetOnly.test(messageContact)) {
+        $currentField.after('<div class="form__alert-danger">Please enter a valid message!</div>');
+        $currentField.siblings('.form__alert-danger').fadeIn();
+
+        console.log("This worked:" + messageContact);
+      }
+
+      // Enable/Disable Button
+      if (fnameContact !== '' && emailContact !== '' && filterEmail.test(emailContact) && messageContact !== '' ) {
+          $('#wpforms-submit-201').removeAttr('disabled');
+      } else {
+          $('#wpforms-submit-201').attr('disabled', 'disabled');
+      }
+  });
+})(jQuery);

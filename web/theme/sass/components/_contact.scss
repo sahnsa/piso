@@ -2,36 +2,36 @@
     &__contact-content {
         position: $default-relative-position;
         width: $default-width;
-        height: $default-height;
+        height: $height-auto;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
 
         @include respond(big-desktop) {
-            height: 90vh !important;
+            height: $height-auto;
         }
 
         @include respond(tablet-landscape) {
-            height: 80vh !important;
+            height: $height-auto;
         }
 
         @include respond(tablet-portrait) {
-            height: 80vh !important;
+            height: $height-auto;
         }
 
         @include respond(phone) {
-            height: 90vh !important;
+            height: $height-auto;
         }
     }
 
     &__bg-image-overlay {
-        height: 100%;
+        // height: 100%;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        content: "";
-        position: $default-absolute-position;
+        // content: "";
+        position: $default-relative-position;
     }
 
     h1 {
@@ -44,8 +44,11 @@
 
     &__ready-to-start-form {
        padding-left: 5rem;
-       padding-bottom: 0;
+       padding-bottom: 5rem;
        padding-right: 5rem;
        padding-top: 5rem;
+
+       position: $default-relative-position;
+       z-index: 1;
     }
 }

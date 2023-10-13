@@ -6,6 +6,8 @@ $color-page-background: #FBFAF7;
 $color-white: #FFFFFD;
 $color-body-copy: #747070;
 $color-dark-mode: #1e1e1e;
+$color-checkbox-bg: #252526;
+$color-mode-off: #3e3e42;
 
 // Define default and font properties
 $default-font-size: 2rem;
@@ -33,10 +35,13 @@ $default-height: 100%;
 $default-width: 100%;
 $default-height-vh: 100vh;
 $default-max-width: 1320px;
+$height-auto: auto;
+$min-height: 80vh;
 
 // Define display block props
 $display-flex: flex;
 $display-block: block;
+$display-inline: inline-block;
 
 // Define default border properties
 $border-color: #232222;
