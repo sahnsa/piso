@@ -25,12 +25,12 @@ This portfolio website utilizes modern web technologies to offer users a richer 
 -	Adobe XD: Secondary UX/UI design tool.
 -	Photoshop: Used exclusively for image processing.
 
-## PISO IA - 
+## PISO IA 
 
-![Site Structure & Architecture]('theme/media/images/architecture.png')
-![Folder Structure]('theme/media/images/architecture.png')
+![Site Structure & Architecture]('web/theme/media/images/architecture.png')
+![Folder Structure]('web/theme/media/images/architecture.png')
 ![Content Structure & Architecture]('/theme/media/images/architecture.png')
-![Site Map]('theme/media/images/architecture.png')
+![Site Map]('web/theme/media/images/architecture.png')
 
 ## Disclaimer
 
