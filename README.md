@@ -27,10 +27,10 @@ This portfolio website utilizes modern web technologies to offer users a richer 
 
 ## PISO IA - 
 
-![Site Structure & Architecture]('/media/images/architecture.png')
-![Folder Structure]('/media/images/folderstructure.png')
-![Content Structure & Architecture]('/media/images/content-structure.png')
-![Site Map]('/media/images/sitemap.png')
+![Site Structure & Architecture]('/theme/media/images/architecture.png')
+![Folder Structure]('/theme/media/images/architecture.png')
+![Content Structure & Architecture]('/theme/media/images/architecture.png')
+![Site Map]('/theme/media/images/architecture.png')
 
 ## Disclaimer
 
