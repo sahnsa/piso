@@ -27,10 +27,11 @@ This portfolio website utilizes modern web technologies to offer users a richer 
 
 ## PISO IA - Information Architecture
 
-![Site Structure & Architecture]('web/theme/media/images/architecture.png')
-![Folder Structure]('web/theme/media/images/architecture.png')
-![Content Structure & Architecture]('/theme/media/images/architecture.png')
-![Site Map]('web/theme/media/images/architecture.png')
+![Site Structure & Architecture]('web/theme/media/images/architecture.png)
+![Folder Structure](web/theme/media/images/architecture.png)
+![Content Structure & Architecture]('/theme/media/images/architecture.png)
+![Site Map](web/theme/media/images/architecture.png)
+
 
 ## Disclaimer
 
