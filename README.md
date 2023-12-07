@@ -17,7 +17,7 @@ Having grown fond of Drupal as my preferred platform for building websites and o
 
 ## Technology
 
-This portfolio website utilizes modern web technologies to offer users a richer experience. Among the technologies deployed are ReactJS, NodeJS, JavaScript/jQuery, HTML5 + CSS3, MySQL, and content management systems like WordPress and Drupal, which facilitate easy management of user-facing content.
+This portfolio website utilizes modern web technologies to offer users a richer experience. Among the technologies used: JavaScript/jQuery, HTML5 + CSS3, SASS, MySQL, and WordPress. I am preparing to move this to Drupal entirely.
 
 ## UX/UI Design Tool
 
@@ -34,4 +34,4 @@ This portfolio website utilizes modern web technologies to offer users a richer 
 
 ## Disclaimer
 
-We appreciate your visit and interest in our project repository. However, all contents of this project are reserved. Should you wish to utilize any of our features, please seek appropriate permission. Furthermore, this repository should not be used for malicious purposes or intents.
+I appreciate your visit and interest in my project repository. However, all contents of this project are reserved. Should you wish to utilize any of features, please seek appropriate permission. Furthermore, this repository should not be used for malicious purposes or intents.

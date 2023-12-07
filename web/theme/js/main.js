@@ -141,7 +141,7 @@ darkModeCheckbox.addEventListener("change", () => {
 
   $('#wpforms-7-field_5, #wpforms-7-field_7, #wpforms-7-field_8').on('keyup change blur', function() {
       let filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-      let alphabet = /^[a-zA-Z\s'-]+$/;
+      let alphabet = /^[a-zA-Z.,\s]+$/;
 
       let fname = $('#wpforms-7-field_5').val();
       let email = $('#wpforms-7-field_7').val();
@@ -193,7 +193,7 @@ darkModeCheckbox.addEventListener("change", () => {
 
   $('#wpforms-201-field_7, #wpforms-201-field_8, #wpforms-201-field_9').on('keyup change blur', function() {
       let filterEmail = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-      let alphabetOnly = /^[a-zA-Z\s'-]+$/;
+      let alphabetOnly = /^[a-zA-Z.,\s]+$/;
 
       let fnameContact = $('#wpforms-201-field_7').val();
       let emailContact = $('#wpforms-201-field_8').val();
