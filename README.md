@@ -2,7 +2,7 @@
 
 ## PISO Website Project
 
-Description - This is my portfolio website, designed to showcase my projects for clients as well as personal projects undertaken during my free time. I decided to create this portfolio website to house my projects undertaken during my one-year Drupal training in 2022. In the future, I might transition this into a consulting web geek platform. Additionally, I'm contemplating moving the portfolio from WordPress to Drupal entirely. This change would allow me to build and incorporate advanced functionalities with custom modules as I consider expanding into consulting.
+Description - This is my portfolio website, designed to showcase my projects for clients as well as personal projects undertaken during my free time. Additionally, I'm planning moving the portfolio from WordPress to Drupal entirely. This change would allow me to build and incorporate advanced functionalities with custom modules as I consider expanding into side geek:.
 
 ## Website Url
 www.pisolake.com
